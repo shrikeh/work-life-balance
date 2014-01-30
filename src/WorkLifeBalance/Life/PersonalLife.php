@@ -1,6 +1,6 @@
 <?php
 
-namespace Work\Life;
+namespace WorkLifeBalance\Life;
 
 interface PersonalLife
 {
