@@ -27,11 +27,11 @@ class Balance
         return false;
     }
 
-    public function __construct()
+    public function __construct(array $partners = array(), array $children = array())
     {
-        $this->children = new ArrayObject();
+        $this->children = new ArrayObject($children);
         // allow poly
-        $this->parnters = new ArrayObject();
+        $this->partners = new ArrayObject($partners);
     }
 
     public function areMyChildrenMoreImportantThan(
